@@ -11,7 +11,7 @@ console.log(number);
 const n1 = 3;
 const n2 = 73;
 const n3 = 88;
-const validNumber = (n1 >= 50 && n1 <= 90 | n2 >=50 && n2 <=90 | n3 >=50 && n3 <= 90);
+const validNumber = (n1 >= 50 && n1 <= 90 || n2 >=50 && n2 <=90 || n3 >=50 && n3 <= 90);
 if (validNumber === true) {
     console.log("True");
 }  else {
@@ -38,6 +38,7 @@ else {
 console.log("The largest number is " + largestNumber );
 // ANSWER : it prints The largest number is 88
 
+
 // 4. Create a new string adding "Py" in front of a given string. If the given string begins with "Py" then print the original string.
 
 const phrase = "Rates are too high";
@@ -46,6 +47,7 @@ if (newPhrase.startsWith("Py")){
     console.log(phrase);
 }
 // ANSWER: it prints "Rates are too high"
+
 
 // 5. Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80. 
 
@@ -57,6 +59,7 @@ if (sum >= 50 && sum <= 90) {
 } else {
   console.log(80);
 }
+// ANSWER: it prints 65
 
 // 6. Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 
@@ -66,7 +69,6 @@ const total = int1 + int2;
 if (total === 8) {
     console.log("true");
 }
-
 // ANSWER: it prints true
 
 // 7. Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true. 
@@ -74,10 +76,11 @@ if (total === 8) {
 const intA = 12;
 const intB = 3;
 
-if(intA === 15 || intB === 15 && intA + intB === 15);{
+if (intA === 15 || intB === 15 && intA + intB === 15);{
 	   console.log(true);	
    }
 // ANSWER : it prints true
+
 
 // 8. Check whether one of two integers is a multiple of 7 or 11. If so, print true.
 
@@ -89,28 +92,45 @@ if (d % 7 === 0 || d % 11 === 0 || e % 7 === 0 || e % 11 === 0) { console.log(tr
 
 // ANSWER: it prints true
 
+
 // 9. Calculate the sum of the two given integers. If the two values are the same, then print triple their sum. 
 
-const givenNum1 = 77;
-const givenNum2 = 32;
+const givenNum1 = 30;
+const givenNum2 = 30;
 const givenSum = givenNum1 + givenNum2;
 if (givenNum1 === givenNum2) {
     console.log(givenSum * 3);
 }
+
+// ANSWER: it prints 180
 
 // 10. Calculate the difference between a specified number and 19. Print double the difference if the specified number is greater than 19.
 
 const specifiedNum = 37;
 const diff = specifiedNum - 19;
 if (specifiedNum > 19){
-    console.log(diff*3);
+    console.log(diff*2);
 }
-// ANSWER it prints 54
+// ANSWER it prints 36
 
 
 // 11. BONUS CHALLENGE:  Make a variable for firstName and age and give each variable values. Create an if/else statement to check whether the person's age is less than 13. If so, print "firstName is a child". If the age is equal to or more than 13 and less than 20, print "firstName is a teenager". If the person's age is equal to and more than 20 and less than 30, then print "firstName is a young adult". If none of these conditions apply, print "firstName is a adult". 
 
+const firstName = "Pepito";
+const age = 25;
+if (age < 13){
+    console.log(firstName + " is a child");
+}
+else if (age >= 13 && age < 20){
+    console.log(firstName + " is a teenager");
+}
+else if (age > 20 && age < 30){
+    console.log(firstName + " is a young adult");
+}
+else (age > 30)
+    (firstName  + " is an adult");
+
+// ANSWER: it prints Pepito is a young adult
 
 
 
-// 12. BONUS CHALLENGE: Play around with each of your results, i.e., make sure they are dynamic to different inputs; is there a more efficient way of writing your code?; etc. 
