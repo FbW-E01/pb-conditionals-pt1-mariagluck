@@ -73,9 +73,11 @@ if (total === 8) {
 
 const intA = 12;
 const intB = 3;
-if ((intA || intB = 15) || (intA + intB = 15)) {
-    console.log(true);
-}
+
+if(intA === 15 || intB === 15 && intA + intB === 15);{
+	   console.log(true);	
+   }
+// ANSWER : it prints true
 
 // 8. Check whether one of two integers is a multiple of 7 or 11. If so, print true.
 
